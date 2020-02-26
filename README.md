@@ -1,5 +1,3 @@
-# yary sayaraka
-sayara
 <!DOCTYPE html>
 <html>
     <head>
