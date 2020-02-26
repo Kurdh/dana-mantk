@@ -154,13 +154,13 @@ function setup(){
     createScore();
     createWindow();
     
-    btn = document.getElementsByClassName('restart')[0];
+    btn = document.getElementsByClassName('دووبارە کردنەوەی یاری')[0];
     div = document.getElementsByClassName('gm')[0];
     
-    p = document.getElementsByClassName('score')[0];
+    p = document.getElementsByClassName('خاڵ')[0];
     
     
-    btn.addEventListener('click', e => {
+    btn.addEventListener('کلیک', e => {
         div.style.display = 'none';
         objects.splice(0, objects.length);
         scores = 0;
@@ -170,9 +170,9 @@ function setup(){
     }); 
     
     
-    makeToast('Hello There!', 2000);
-    makeToast('Click to jump! ', 6000);
-    makeToast('Objects are coming! Be Ready! Good Luck! - Arb', 9000);
+    makeToast('بەخێربێی', 2000);
+    makeToast('کلیک بکەو پازدە! ', 6000);
+    makeToast('یاریەکە دەست پێ دەکات', 9000);
 
 }
 
@@ -203,7 +203,7 @@ function draw(){
         if (objects[i].x <= -objects[i].w){
             objects.splice(i, 1);
             scores++;
-            p.innerText = 'SCORE : ' + scores;
+            p.innerText = 'خاڵ : ' + scores;
             
             
         }
